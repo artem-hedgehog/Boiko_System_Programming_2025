@@ -1,0 +1,52 @@
+Dump of assembler code for function _start:
+   0x08049026 <+0>:	mov    $0x4,%eax
+   0x0804902b <+5>:	mov    $0x1,%ebx
+   0x08049030 <+10>:	mov    $0x8049000,%ecx
+   0x08049035 <+15>:	mov    $0xc,%edx
+   0x0804903a <+20>:	int    $0x80
+   0x0804903c <+22>:	mov    $0x4,%eax
+   0x08049041 <+27>:	mov    $0x1,%ebx
+   0x08049046 <+32>:	mov    $0x804900c,%ecx
+   0x0804904b <+37>:	mov    $0x7,%edx
+   0x08049050 <+42>:	int    $0x80
+   0x08049052 <+44>:	mov    $0x4,%eax
+   0x08049057 <+49>:	mov    $0x1,%ebx
+   0x0804905c <+54>:	mov    $0x8049013,%ecx
+   0x08049061 <+59>:	mov    $0x7,%edx
+   0x08049066 <+64>:	int    $0x80
+   0x08049068 <+66>:	mov    $0x4,%eax
+   0x0804906d <+71>:	mov    $0x1,%ebx
+   0x08049072 <+76>:	mov    $0x804901a,%ecx
+   0x08049077 <+81>:	mov    $0xc,%edx
+   0x0804907c <+86>:	int    $0x80
+   0x0804907e <+88>:	mov    $0x1,%eax
+   0x08049083 <+93>:	mov    $0x0,%ebx
+   0x08049088 <+98>:	int    $0x80
+End of assembler dump.
+
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+Dump of assembler code for function main:
+   0x0000000000001149 <+0>:	endbr64
+   0x000000000000114d <+4>:	push   %rbp
+   0x000000000000114e <+5>:	mov    %rsp,%rbp
+   0x0000000000001151 <+8>:	lea    0xeac(%rip),%rax        # 0x2004
+   0x0000000000001158 <+15>:	mov    %rax,%rdi
+   0x000000000000115b <+18>:	call   0x1050 <puts@plt>
+   0x0000000000001160 <+23>:	lea    0xea8(%rip),%rax        # 0x200f
+   0x0000000000001167 <+30>:	mov    %rax,%rdi
+   0x000000000000116a <+33>:	call   0x1050 <puts@plt>
+   0x000000000000116f <+38>:	lea    0xe9f(%rip),%rax        # 0x2015
+   0x0000000000001176 <+45>:	mov    %rax,%rdi
+   0x0000000000001179 <+48>:	call   0x1050 <puts@plt>
+   0x000000000000117e <+53>:	lea    0xe96(%rip),%rax        # 0x201b
+   0x0000000000001185 <+60>:	mov    %rax,%rdi
+   0x0000000000001188 <+63>:	call   0x1050 <puts@plt>
+   0x000000000000118d <+68>:	mov    $0x0,%eax
+   0x0000000000001192 <+73>:	pop    %rbp
+   0x0000000000001193 <+74>:	ret
+End of assembler dump.
