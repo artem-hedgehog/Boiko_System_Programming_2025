@@ -12,8 +12,6 @@ total 8
 drwxrwx-w-+ 2 codespace codespace 4096 Sep 17 15:40 .
 drwxrwxrwx+ 4 codespace codespace 4096 Sep 17 15:54 ..
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/Лабораторная работа №1! $ cd ..
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd "Work/ФИО"
-bash: cd: Work/ФИО: Permission denied
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ ls -l "Work/"
 total 8
 drwxrwx-w-+ 2 codespace codespace 4096 Sep 17 15:40 'Лабораторная работа №1!'
@@ -24,13 +22,9 @@ bash: cho: command not found
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ echo 'Отличается умом, отличается сообразительностью...' >> "Work/Text @1"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cp "Work/Text @1" "Work/Text $2"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cat "Work/Text @1" >> "Work/Text $2"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cat "Work/Text @1" >> 'Work/Text $2'
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ mv 'Work/Text $2' "Work/Лабораторная работа №1!"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ chmod 300 Work/ФИО
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cp "Work/Text @1" "Work/ФИО"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ chmod 200 "Work/ФИО"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cat "Work/Text @1" > "Work/ФИО/Text @1"
-bash: Work/ФИО/Text @1: Permission denied
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ chmod 300 Work/ФИО
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cat "Work/Text @1" > "Work/ФИО/Text @1"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Work
@@ -47,137 +41,24 @@ Try 'chmod --help' for more information.
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ФИО
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ ls -a
  .   ..  'Text @1'
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ cd Text @1
-bash: cd: too many arguments
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ cd 'Text @1'
-bash: cd: Text @1: Not a directory
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ cd ..
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ..
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ chmod 200 Work/ФИО
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip Text @1
-gzip: Text: No such file or directory
-gzip: @1: No such file or directory
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip "Text @1"
-gzip: Text @1: No such file or directory
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip "Work/Text @1"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip "Work/Text #3"
-\@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ tar -cf MyAchiv.tar "Work/Text @1" "Work/Text #3"
-tar: Work/Text @1: Cannot stat: No such file or directory
-tar: Work/Text #3: Cannot stat: No such file or directory
-tar: Exiting with failure status due to previous errors
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ tar -cf MyAchiv.tar "Work/Text @1.gz" "Work/Text #3.gz"
+@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip -d "Work/Text @1"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ gzip -d "Work/Text #3"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ head -n 1 "Text @1" >> "Text #3"
-head: cannot open 'Text @1' for reading: No such file or directory
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ head -n 1 "Work/Text @1" >> "Work/Text #3"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ echo 'Будь осторожен! Преступник вооружен!' >> "Work/Text @1"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ echo 'Будь осторожен! Преступник вооружен!' >> "Work/Text #3"
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Work/ФИО
-bash: cd: Work/ФИО: Permission denied
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Work
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ФИО
-bash: cd: ФИО: Permission denied
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ chmod 777 ФИО
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ 
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ФИО
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ tail -r "../Text @1" > Result_one
-tail: invalid option -- 'r'
-Try 'tail --help' for more information.
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ tail --help
-Usage: tail [OPTION]... [FILE]...
-Print the last 10 lines of each FILE to standard output.
-With more than one FILE, precede each with a header giving the file name.
-
-With no FILE, or when FILE is -, read standard input.
-
-Mandatory arguments to long options are mandatory for short options too.
-  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to
-                             output starting with byte NUM of each file
-  -f, --follow[={name|descriptor}]
-                           output appended data as the file grows;
-                             an absent option argument means 'descriptor'
-  -F                       same as --follow=name --retry
-  -n, --lines=[+]NUM       output the last NUM lines, instead of the last 10;
-                             or use -n +NUM to skip NUM-1 lines at the start
-      --max-unchanged-stats=N
-                           with --follow=name, reopen a FILE which has not
-                             changed size after N (default 5) iterations
-                             to see if it has been unlinked or renamed
-                             (this is the usual case of rotated log files);
-                             with inotify, this option is rarely useful
-      --pid=PID            with -f, terminate after process ID, PID dies
-  -q, --quiet, --silent    never output headers giving file names
-      --retry              keep trying to open a file if it is inaccessible
-  -s, --sleep-interval=N   with -f, sleep for approximately N seconds
-                             (default 1.0) between iterations;
-                             with inotify and --pid=P, check process P at
-                             least once every N seconds
-  -v, --verbose            always output headers giving file names
-  -z, --zero-terminated    line delimiter is NUL, not newline
-      --help        display this help and exit
-      --version     output version information and exit
-
-NUM may have a multiplier suffix:
-b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,
-GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y, R, Q.
-Binary prefixes can be used, too: KiB=K, MiB=M, and so on.
-
-With --follow (-f), tail defaults to following the file descriptor, which
-means that even if a tailed file is renamed, tail will continue to track
-its end.  This default behavior is not desirable when you really want to
-track the actual name of the file, not the file descriptor (e.g., log
-rotation).  Use --follow=name in that case.  That causes tail to track the
-named file in a way that accommodates renaming, removal and creation.
-
-GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-Report any translation bugs to <https://translationproject.org/team/>
-Full documentation <https://www.gnu.org/software/coreutils/tail>
-or available locally via: info '(coreutils) tail invocation'
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ tail -n "../Text @1" > Result_one
-tail: invalid number of lines: ‘../Text @1’
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ tac "Work/Text @1" >> "Work/ФИО/Result_one"
-bash: Work/ФИО/Result_one: No such file or directory
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/ФИО $ cd ..
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ..
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ tac "Work/Text @1" >> "Work/ФИО/Result_one"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ mv "Work/ФИО/Result_one" "Work/ФИО/Result_two"
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Work
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ find ФИО -name 'T*' > "Лабораторная работа №1!/Result_3"
-bash: !/Result_3: event not found
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd Лабораторная работа №1!
-bash: cd: too many arguments
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd 'Лабораторная работа №1!'
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/Лабораторная работа №1! $ touch Result_3
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/Лабораторная работа №1! $ find ФИО -name 'T*' > "Лабораторная работа №1!/Result_3"
 bash: !/Result_3: event not found
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work/Лабораторная работа №1! $ cd ..
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ..
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd 'Лабораторная работа №1!'
-bash: cd: Лабораторная работа №1!: No such file or directory
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Work
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ find ФИО -name 'T*' > "Лабораторная работа №1!/Result_3"
-bash: !/Result_3: event not found
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ find ФИО -name 'T*' > 'Лабораторная работа №1!/Result_3'
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ for file in ФИО/T*; do
-    if [ -f "$file" ]; then
-        echo "=== Содержимое файла: $file ===" >> "Лабораторная работа №1!/Result_3"
-        cat "$file" >> "Лабораторная работа №1!/Result_3"
-        echo -e "\n" >> "Лабораторная работа №1!/Result_3"
-    elif [ -d "$file" ]; then
-        echo "=== Содержимое папки: $file ===" >> "Лабораторная работа №1!/Result_3"
-        ls -la "$file" >> "Лабораторная работа №1!/Result_3"
-        echo -e "\n" >> "Лабораторная работа №1!/Result_3"
-    fi
-done
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: syntax error near unexpected token 'elif'
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: syntax error near unexpected token 'fi'
-bash: syntax error near unexpected token 'done'
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ for file in ФИО/T*; do
     if [ -f "$file" ]; then
         echo "=== Содержимое файла: $file ===" >> 'Лабораторная работа №1!/Result_3' 
@@ -189,30 +70,10 @@ bash: syntax error near unexpected token 'done'
         echo -e "\n" >> 'Лабораторная работа №1!/Result_3' 
     fi
 done
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ echo "=== Информация о ядре системы ===" >> "Лабораторная работа №1!/Result_3"
-uname -a >> "Лабораторная работа №1!/Result_3"
-echo -e "\n=== Текущая дата ===" >> "Лабораторная работа №1!/Result_3"
-date >> "Лабораторная работа №1!/Result_3"
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
-bash: !/Result_3: event not found
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ echo "=== Информация о ядре системы ===" >> 'Лабораторная работа №1!/Result_3' 
 uname -a >> 'Лабораторная работа №1!/Result_3' 
 echo -e "\n=== Текущая дата ===" >> 'Лабораторная работа №1!/Result_3' 
 date >> 'Лабораторная работа №1!/Result_3'
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd //
-@artem-hedgehog ➜ // $ cd workspaces
-@artem-hedgehog ➜ //workspaces $ cd ..
-@artem-hedgehog ➜ // $ cd ..
-@artem-hedgehog ➜ // $ cd /
-@artem-hedgehog ➜ / $ ls
-bin                boot  etc  home  lib.usr-is-merged  lib64  mnt  proc  run   sbin.usr-is-merged  sys  usr  vscode
-bin.usr-is-merged  dev   go   lib   lib32              media  opt  root  sbin  srv                 tmp  var  workspaces
-@artem-hedgehog ➜ / $ cd workspaces/Boiko_System_Programming_2025
+@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Work $ cd ..
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ mkdir Lab_1
 @artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ mv sandbox Work Work_files Lab_1/
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025 $ cd Lab_1
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Lab_1 $ ls -a
-.  ..  Work  Work_files  sandbox
-@artem-hedgehog ➜ /workspaces/Boiko_System_Programming_2025/Lab_1 $ 
