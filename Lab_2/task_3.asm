@@ -18,7 +18,7 @@ print_triangle:
 print_char:
     push ecx            ; Сохраняем счетчик
     mov eax, 4          ; sys_write
-    mov ecx, char       ; Символ '8'
+    mov ecx, char       ; Символ ':'
     mov edx, 1          ; Длина 1 символ
     int 0x80
     pop ecx             ; Восстанавливаем счетчик
