@@ -1,0 +1,2 @@
+number of letters:22
+number of digits:29
