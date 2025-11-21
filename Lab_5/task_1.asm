@@ -103,6 +103,7 @@ read_done:
     call number_str_append
     
     mov byte [rsi], 0          ; завершаем строку
+
     
     ; Вычисляем длину результата
     mov rax, result_buffer
