@@ -1,0 +1,2 @@
+number of letters:33
+number of digits:9
